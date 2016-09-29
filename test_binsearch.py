@@ -32,7 +32,7 @@ def test_bound_F():
 
 def test_bound_T():
 	input_array = list(range(10))
-	assert binary_search(input, 2, 3, 1) == 2
+	assert binary_search(input, 2, 1, 3) == 2
 
 def test_bound_reverse():
 	input_array = list(range(10))
