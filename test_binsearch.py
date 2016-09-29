@@ -28,21 +28,21 @@ def test_inf_2():
 
 def test_bound_F():
 	input_array = list(range(10))
-	assert binary_search(input, 5, 1, 3) == -1
+	assert binary_search(input_array, 5, 1, 3) == -1
 
 def test_bound_T():
 	input_array = list(range(10))
-	assert binary_search(input, 2, 1, 3) == 2
+	assert binary_search(input_array, 2, 1, 3) == 2
 
 def test_bound_reverse():
 	input_array = list(range(10))
-	assert binary_search(input, 2, 3, 1) == -1
+	assert binary_search(input_array, 2, 3, 1) == -1
 
 def test_bound_same():
 	input_array = list(range(10))
-	assert binary_search(input, 2, 2, 2) == 2
+	assert binary_search(input_array, 2, 2, 2) == 2
 
 def test_bound_outflow():
 	input_array = list(range(10))
-	assert binary_search(input, 5, 2, 2) == -1
+	assert binary_search(input_array, 5, 2, 2) == -1
 
