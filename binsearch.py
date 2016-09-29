@@ -1,4 +1,4 @@
-def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
+def binary_search(da_array:list, needle, left:int=0, right:int=-1) -> int:
     if left==0:
         rangemin = 0
     else:
