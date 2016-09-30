@@ -60,4 +60,4 @@ def test_nan_1():
 
 def test_nan_2():
     with raises(ValueError):
-        binary_search([1, float('NaN')], float('NaN')
+        binary_search([1, float('NaN')], float('NaN'))
