@@ -86,6 +86,3 @@ def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
         else:
             index = midpoint
             return index
-
-a = binary_search([5, 6, 2, 4], 2)
-print(a)
