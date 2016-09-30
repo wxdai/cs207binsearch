@@ -50,6 +50,13 @@ def test_char():
     with raises(TypeError):
         binary_search('a', 2)
 
+def test_mixed():
+    with raises(TypeError):
+        binary_search(['a', 2, 4], 9)
+
+def test_char():
+    assert (binary_search([1, 3, 3], 3) == 1) | (binary_search([1, 3, 3], 3) == 2)
+
 def test_zero():
     assert binary_search([], 1) == -1
 
