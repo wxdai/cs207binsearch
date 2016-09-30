@@ -52,12 +52,12 @@ def test_char():
 
 def test_zero():
     with raises(ValueError):
-        binary_search([])
+        binary_search([], 1)
 
 def test_nan_1():
     with raises(ValueError):
-        binary_search([1, nan], 1)
+        binary_search([1, NaN], 1)
 
 def test_nan_2():
     with raises(ValueError):
-        binary_search([1, nan], nan)
+        binary_search([1, NaN], nan)
