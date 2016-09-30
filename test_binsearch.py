@@ -52,7 +52,7 @@ def test_char():
 
 def test_mixed():
     with raises(TypeError):
-        binary_search(['a', 2, 4], ‘a’)
+        binary_search(['a', 2, 4], 'a')
 
 def test_num():
         assert binary_search(['a', 2, 4], 2) == 1
@@ -65,3 +65,6 @@ def test_zero():
 
 def test_nan_1():
     assert binary_search([1, float('NaN')], 1) == 0
+
+def test_unsorted():
+    assert binary_search([5, 6, 2, 4], 2) == -1
