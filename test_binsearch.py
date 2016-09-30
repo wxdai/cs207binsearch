@@ -52,7 +52,10 @@ def test_char():
 
 def test_mixed():
     with raises(TypeError):
-        binary_search(['a', 2, 4], 9)
+        binary_search(['a', 2, 4], ‘a’)
+
+def test_num():
+        assert binary_search(['a', 2, 4], 2) == 1
 
 def test_char():
     assert (binary_search([1, 3, 3], 3) == 1) | (binary_search([1, 3, 3], 3) == 2)

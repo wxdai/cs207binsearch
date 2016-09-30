@@ -87,6 +87,5 @@ def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
             index = midpoint
             return index
 
-#a = binary_search([], 1)
-a = binary_search([1, 2, 4, 3, 4, 5, float('NaN')], float('NaN'))
+a = binary_search(['a', 2, 4], 2)
 print(a)
