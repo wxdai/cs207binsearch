@@ -48,7 +48,7 @@ def test_bound_outflow():
 
 def test_char():
     with raises(TypeError):
-        binary_search(‘a’, 2)
+        binary_search('a', 2)
 
 def test_zero():
     with raises(ValueError):
