@@ -52,12 +52,12 @@ def test_char():
 
 def test_zero():
     with raises(ValueError):
-        mymedian([])
+        binary_search([])
 
 def test_nan_1():
     with raises(ValueError):
-        mymedian([1, nan], 1)
+        binary_search([1, nan], 1)
 
 def test_nan_2():
     with raises(ValueError):
-        mymedian([1, nan], nan)
+        binary_search([1, nan], nan)
